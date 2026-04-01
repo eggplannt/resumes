@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in LaTeX
+% Author: AJ Oguntade
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\setlength{\footskip}{4.08003pt}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape AJ Oguntade} \\ \vspace{4pt}
+    \small (587) 778-1290 $|$
+    {\underline{oguntade.site}} $|$
+    {\underline{linkedin.com/in/aj-oguntade}} $|$
+    Edmonton, AB
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Calgary}{Calgary, AB}
+      {Bachelor of Science in Computer Science}{Expected Spring 2029}
+    \resumeSubheading
+      {Harry Ainlay High School}{Edmonton, AB}
+      {High School Diploma}{Summer 2025}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Transit Monkey} $|$ \emph{Flutter, Golang, SQLite}}{2024}
+      \resumeItemListStart
+        \resumeItem{Architected a high-performance backend API in Golang to minimize latency during trip planning.}
+        \resumeItem{Implemented a CLI database builder to convert GTFS zip files into SQLite databases, enabling deployment on any server.}
+        \resumeItem{Implemented client-side downloading and processing of GTFS zip files for offline use.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{composite-highlighting.nvim} $|$ \emph{Lua, Neovim, Treesitter}}{2025}
+      \resumeItemListStart
+        \resumeItem{Developed and published an open-source Neovim plugin enabling simultaneous Treesitter-based syntax highlighting for two languages within a single file.}
+        \resumeItem{Implemented a custom Treesitter injection directive with dynamic inner-language detection based on filename conventions (e.g., \texttt{page.html.tmpl}).}
+        \resumeItem{Designed a configurable API supporting multiple template engines (Go templates, Jinja2, ERuby) with sensible defaults and fallback logic.}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{Function} $|$ \emph{Flutter, Firebase, Dart}}{2024}
+      \resumeItemListStart
+        \resumeItem{Developed a social discovery feature enabling users to track real-time events hosted by people in their network.}
+        \resumeItem{Built full-stack features including secure user authentication, profile management, and a comprehensive search algorithm.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graphic Design Intern}{July 2023 -- August 2023}
+      {Canadian Imperial Advantage}{Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Created visually compelling posters and advertisements for Instagram, enhancing brand visibility and engagement.}
+        \resumeItem{Managed up to 5 projects simultaneously, meeting tight deadlines and ensuring high-quality deliverables.}
+        \resumeItem{Collaborated with the Marketing Team to develop and execute promotional strategies and campaigns.}
+        \resumeItem{Designed social media graphics ensuring consistency with brand guidelines.}
+        \resumeItem{Conducted market research to stay updated on current design trends and competitor activities.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {School Library Assistant}{September 2022 -- January 2023}
+      {Harry Ainlay High School}{Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Organized and cataloged books and resources, ensuring easy access and efficient retrieval for students and staff.}
+        \resumeItem{Assisted students and teachers with technical difficulties and research obstacles, providing prompt resolutions.}
+        \resumeItem{Managed the library's help desk, responding to requests for assistance with research, technology, and resources.}
+        \resumeItem{Provided technical support for library computers and digital devices, assisting users with troubleshooting.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Backend \& Database}{: Firebase, Golang, SQLite, Data Processing, Server Management, Linux} \\
+     \textbf{Mobile Development}{: Flutter/Dart, React Native/TypeScript} \\
+     \textbf{Web Development}{: Server-Side Rendering (SSR), Golang, HTMX, Tailwind CSS, HTML/CSS} \\
+     \textbf{Languages}{: C/C++, C\#, Python, JavaScript} \\
+     \textbf{Design}{: App/Website Graphics, Brand Consistency, Marketing Material Design} \\
+     \textbf{Soft Skills}{: Versatility, Optimism, Problem Solving \& Troubleshooting, Communication}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

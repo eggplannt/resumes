@@ -1,0 +1,165 @@
+%-------------------------
+% Resume in LaTeX
+% Author: AJ Oguntade
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\setlength{\footskip}{4.08003pt}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape AJ Oguntade} \\ \vspace{4pt}
+    \small (587) 778-1290 $|$
+    {\underline{oguntade.site}} $|$
+    {\underline{linkedin.com/in/aj-oguntade}} $|$
+    Edmonton, AB
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Calgary}{Calgary, AB}
+      {Bachelor of Science in Computer Science, Minor in Philosophy}{Expected Spring 2029}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {School Library Assistant \& Tech Support}{September 2022 -- January 2023}
+      {Harry Ainlay High School}{Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Managed the library's IT help desk, delivering direct customer service and technical support to students and staff.}
+        \resumeItem{Diagnosed and resolved hardware and software issues on library computers and digital devices promptly.}
+        \resumeItem{Assisted users with research obstacles and database navigation, translating technical concepts into accessible language.}
+        \resumeItem{Organized and cataloged resources, ensuring efficient retrieval and maintaining a welcoming environment for patrons.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graphic Design Intern}{July 2023 -- August 2023}
+      {Canadian Imperial Advantage}{Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Collaborated closely with the Marketing Team to determine client needs and execute visual promotional strategies.}
+        \resumeItem{Managed up to 5 simultaneous projects, effectively prioritizing tasks to meet tight deadlines without sacrificing quality.}
+        \resumeItem{Delivered high-quality customer experiences by ensuring strict brand consistency across all public-facing materials.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS & TECHNICAL EXPERIENCE-----------
+\section{Technical Projects \& Hardware Experience}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Hardware Troubleshooting \& OS Setup} $|$ \emph{Device Configuration, Network Streaming}}{2025 -- 2026}
+      \resumeItemListStart
+        \resumeItem{Installed and configured a variety of operating systems (Linux, Windows, ChromeOS) on diverse hardware, successfully diagnosing and resolving complex driver and compatibility issues.}
+        \resumeItem{Managed physical storage partitions and system configurations to optimize long-term device performance.}
+        \resumeItem{Configured low-latency remote desktop streaming environments across multiple devices to ensure seamless connectivity and user experience.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Server Administration} $|$ \emph{Networking, Server Plugins}}{2026}
+      \resumeItemListStart
+        \resumeItem{Configured and deployed remote multiplayer gaming servers, managing client-side optimizations and cross-play bridging plugins.}
+        \resumeItem{Troubleshot network latency, server whitelisting, and backend configurations to ensure seamless user connectivity.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Iconic (Mobile Application)} $|$ \emph{React Native, TypeScript, Supabase}}{2026}
+      \resumeItemListStart
+        \resumeItem{Developing a full-stack social application with a strong focus on intuitive user interface design and accessibility.}
+        \resumeItem{Actively debugging client-side features and authentication flows based on end-user usability requirements.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Technical Support}{: Hardware Troubleshooting, OS Installation, Network Configuration, Help Desk Operations} \\
+     \textbf{Operating Systems}{: A variety of operating systems (Linux, Windows, ChromeOS, macOS), Terminal/CLI} \\
+     \textbf{Customer Service}{: Client Communication, Problem Solving, Active Listening, Task Prioritization} \\
+     \textbf{Software \& Development}{: React Native, TypeScript, Neovim, Golang, Firebase, Supabase}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,62 @@
+%-------------------------
+% Cover Letter in LaTeX
+% Author: AJ Oguntade
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+
+% Adjust margins (matches resume)
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\pdfgentounicode=1
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape AJ Oguntade} \\ \vspace{4pt}
+    \small (587) 778-1290 $|$
+    {\underline{oguntade.site}} $|$
+    {\underline{linkedin.com/in/aj-oguntade}} $|$
+    Calgary, AB
+\end{center}
+\vspace{6pt}
+
+November 11, 2026
+
+Hiring Team \\
+Digital Technology Services, PETRONAS Canada \\
+Calgary, AB
+
+Dear Hiring Team,
+
+I am writing to apply for the Summer Information Systems Developer position with PETRONAS Canada's Digital Technology Services team for May through August 2027. I am a second-year Computer Science student at the University of Calgary with a 3.8/4.0 GPA, and I will be returning to my studies after the work term. I enjoy building practical tools and helping people get the most out of the systems they rely on, which is why I got really excited when I saw this position.
+
+Almost everything I have built started with a small frustration. I wrote composite-highlighting.nvim because my editor could not properly highlight the templating languages I was working in, and I built my Transit Trip Planner because I wanted a faster way to plan trips that would still work offline on my phone. Since becoming Vice President of Technology for the Computer Science Undergraduate Society, I see the same thing in other people: executives filling out the same room booking forms every week, branches of the team juggling meeting times, and members wanting to know whether the club room is open. Overseeing tools like our meeting schedulers, Discord bot, and room-booking extension has shown me that the most satisfying technical work is often the unglamorous kind that quietly gives people their time back. That is exactly what this role describes, from answering service requests to finding business processes worth automating, and it is why I want to spend my summer doing it at PETRONAS Canada.
+
+I also think my experience lines up well with the day-to-day work of your Information Systems team. Turning messy GTFS transit data into clean SQLite databases taught me to be careful with data and comfortable in SQL, which I expect will help when assisting users with accessing data and supporting business intelligence reports. Designing REST APIs for my own projects and for my CalgaryHacks team has made me comfortable reading, testing, and troubleshooting integrations between systems. At CSUS, much of my job is keeping our repositories and Markdown documentation organized so the next person can pick things up, and explaining technical trade-offs to executives who are not developers. I am confident working in Python, C++, and C\#, and in the Microsoft Office suite, and I learn new tools quickly when a problem calls for them.
+
+I would love the chance to support your users, help keep your systems documented and reliable, and learn how technology supports one of Canada's largest natural gas operations. Thank you for your time and consideration. I look forward to hearing from you.
+
+Sincerely,
+
+AJ Oguntade
+
+\end{document}

@@ -63,10 +63,11 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\resumeProjectHeading}[3]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
+      \textit{\small#3} & \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -91,18 +92,18 @@
 
 %-----------OBJECTUVE-----------
 \section{Objective}
-      \resumeItemListStart
-      \resumeItem{Second-year computer science student expected to graduate in 2029.}
+      \begin{itemize}[leftmargin=0.3in, label=\textendash, itemsep=2pt, parsep=0pt, topsep=3pt]
+      \resumeItem{\textbf{Second-year} computer science student expected to graduate in 2029.}
       \resumeItem{Years of experience in full-stack development, server management, and Collaborative projects.}
       \resumeItem{Actively learning new skills and located in Calgary, but eager to relocate for positions.}
-      \resumeItemListEnd
+      \end{itemize}\vspace{-5pt}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Calgary | GPA: 3.8/4.0 (Dean's List)}{Calgary, AB}
-      {Bachelor of Science in Computer Science}{Expected Spring 2029}
+      {Bachelor of Science in Computer Science}{Fall 2025 -- Expected Spring 2029}
       \resumeItemListStart
       \resumeItem{Awards: Jason Lang Scholarship}
       \resumeItemListEnd
@@ -113,27 +114,30 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Transit Trip Planner} $|$ \emph{Golang, SQLite}}{March - April 2024}
+      {\textbf{Pawnki} $|$ \emph{TypeScript, React, React Native, Supabase}}{May 2026}
+      {Spaced-repetition chess opening trainer for web and Android}
       \resumeItemListStart
-      \resumeItem{Found optimal bus and train routes in \textbf{ under 1 second} with shortest path algorithm (A*) implemented in a Golang \textbf{Rest API}.}
-      \resumeItem{Implemented a \textbf{CLI} database builder to convert GTFS zip files into \textbf{SQLite} databases, enabling \textbf{deployment} on any \textbf{server}.}
-      \resumeItem{Implemented client-side processing of GTFS zip files into local SQLite databases for offline mobile use.}
+      \resumeItem{Implemented Anki-style \textbf{spaced repetition} (SM-2) to schedule daily reviews of opening positions.}
+      \resumeItem{Designed a \textbf{PostgreSQL} schema and \textbf{serverless} \textbf{Supabase} backend with Row-Level Security and Google auth.}
+      \resumeItem{Architected a \textbf{TypeScript} monorepo sharing PGN parsing and tree logic across \textbf{React} and \textbf{React Native} apps.}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\textbf{The Living Lexicon} (CalgaryHacks, \textbf{6th of 100+ registered teams}) $|$ \emph{React, Node.js, Firebase}}{February 2026}
+      {Crowdsourced dictionary for tracking modern slang and its trends over time}
       \resumeItemListStart
-        \resumeItem{Co-developed a language-learning platform in a 3-person team with \textbf{REST APIs} and \textbf{Firebase}.}
-        \resumeItem{Built the web interface with \textbf{React} and Tailwind CSS, turning the team's concept into a working demo.}
+        \resumeItem{Co-developed a slang dictionary platform in a 3-person team with \textbf{REST APIs} and \textbf{Firebase}.}
+        \resumeItem{Built the web interface with \textbf{React} and \textbf{Tailwind CSS}, turning the team's concept into a working demo.}
         \resumeItem{Pitched the problem, technical design, and product vision to a panel of judges.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{composite-highlighting.nvim} $|$ \emph{Lua, Neovim, Treesitter}}{February 2025}
+      {\textbf{Transit Planner API and Mobile App} $|$ \emph{Golang, SQLite}}{March - April 2024}
+      {Public transit route planner built on GTFS schedule data}
       \resumeItemListStart
-      \resumeItem{Developed and published an \textbf{open-source} tool for enabling proper syntax highlighting when working with templating languages.}
-      \resumeItem{Designed a configurable \textbf{API} supporting multiple template engines (Go templates, Jinja2, ERuby) with sensible defaults and fallback logic.}
-        \resumeItem{Implemented a custom Treesitter injection directive with dynamic inner-language detection based on filename conventions.}
+      \resumeItem{Found optimal bus and train routes in \textbf{under 1 second} with shortest path algorithm (A*) implemented in a Golang \textbf{Rest API}.}
+      \resumeItem{Implemented a \textbf{CLI} database builder to convert GTFS zip files into \textbf{SQLite} databases, enabling \textbf{deployment} on any \textbf{server}.}
+      \resumeItem{Implemented client-side processing of GTFS zip files into local SQLite databases for offline mobile use.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -146,19 +150,18 @@
       {Vice President | Technology}{September 2026 -- Present}
       {Computer Science Undergraduate Society (CSUS), University of Calgary}{Calgary, AB}
       \resumeItemListStart
-      \resumeItem{Maintain \textbf{csus.club}, a \textbf{Next.js} platform on \textbf{Cloudflare} Workers for event RSVPs, \textbf{internal tooling}, and elections.}
-        \resumeItem{Support the rebuild of \textbf{calgaryhacks.ca} into a full hackathon platform for registration, teams, and judging.}
+      \resumeItem{Maintain \textbf{csus.club}, the \textbf{Next.js} platform serving \textbf{3,000+ members} and \textbf{8,000+ monthly views}.}
+        \resumeItem{Support the \textbf{calgaryhacks.ca} rebuild, the registration site for \textbf{one of Calgary's largest hackathons}.}
         \resumeItem{Oversee internal tools, including a \textbf{Python} Discord bot and a room-booking Chrome extension.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Graphic Design Intern}{July 2023 -- August 2023}
-      {Canadian Imperial Advantage}{Edmonton, AB}
+      {Executive Director of Communications}{September 2026 -- Present}
+      {University of Calgary Chess Club (UCCC)}{Calgary, AB}
       \resumeItemListStart
-        \resumeItem{Created visually compelling posters and advertisements for Instagram, enhancing brand visibility and engagement.}
-        \resumeItem{Managed up to 5 projects simultaneously, meeting tight deadlines and ensuring high-quality deliverables.}
-        \resumeItem{Collaborated with the Marketing Team to develop and execute promotional strategies and campaigns.}
-        \resumeItem{Designed social media graphics ensuring consistency with brand guidelines.}
+        \resumeItem{Run the club's \textbf{tech and systems}, including its website, online tools, and member communications.}
+        \resumeItem{Manage the club's social media, designing posts and promotional graphics to grow membership.}
+        \resumeItem{Plan and organize events such as tournaments and casual meetups, from logistics to day-of operations.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
